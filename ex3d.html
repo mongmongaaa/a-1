@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+</head>
+<body>
+    
+    <article>
+        <h2>~..진실과 거짓..~</h2>
+    <div class="p-1">
+        <p>
+            <span>01.24살이다</span>
+            <span>24살이 맞다</span>      
+        </p>
+        <p>
+            <span>02.푸들을 키운다</span>
+            <span>푸들을 키우고 있다</span>      
+        </p>
+        <p>
+            <span>03.서울사람이다</span>
+            <span>대전사람이다</span>      
+        </p>
+        <p>
+            <span>04.아이폰을 쓴다</span>
+            <span>아이폰을 사용한다</span>      
+        </p>
+    </div>
+</article>
+
+<style>
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;}
+
+
+p{font-family:'Pretendard-Regular';
+text-align: center;}
+
+article{width: 100%; height: 100%;
+display: flex;
+flex-direction: column;
+    align-items: center;
+}
+
+h2{margin:100px;}
+.p-1{width: 100%;height: 100%;
+    display: flex;
+    justify-content: center
+}
+
+.p-1 p{width: 200px;height: 350px;
+transform-style:preserve-3d;
+position: relative;
+transition: 1s;
+margin: 20px;
+border-radius:20px;
+
+}
+
+
+.p-1 p span{width: 100%;height: 100%;
+position: absolute;
+left: 0; top: 0;
+background-color: aqua;
+border-radius:20px;
+}
+
+.p-1 p{
+transform: translateY(100%);}
+
+
+
+.p-1 p:nth-of-type(1) span:nth-of-type(1){
+background-color: rgb(185, 242, 252);}
+.p-1 p:nth-of-type(1) span:nth-of-type(2){
+background-color: rgb(255, 203, 124);
+transform: translateZ(-5px) rotateY(180deg);
+}
+
+.p-1 p:nth-of-type(2) span:nth-of-type(1){
+background-color: rgb(185, 242, 252);}
+.p-1 p:nth-of-type(2) span:nth-of-type(2){
+background-color: rgb(255, 203, 124);
+background-image: url(./img/KakaoTalk_20230613_170535869.jpg);
+transform: translateZ(-5px) rotateY(180deg);
+background-size:cover;
+background-position: 50%,0%;
+}
+
+.p-1 p:nth-of-type(3) span:nth-of-type(1){
+background-color: rgb(185, 242, 252);}
+.p-1 p:nth-of-type(3) span:nth-of-type(2){
+background-color: rgb(240, 102, 84);
+transform: translateZ(-5px) rotateY(180deg);
+}
+
+.p-1 p:nth-of-type(4) span:nth-of-type(1){
+background-color: rgb(185, 242, 252);}
+.p-1 p:nth-of-type(4) span:nth-of-type(2){
+background-color: rgb(255, 203, 124);
+transform: translateZ(-5px) rotateY(180deg);
+}
+
+
+
+.p-1 p:nth-of-type(1):hover{transform:perspective(600px) rotateY(180deg);}
+.p-1 p:nth-of-type(2):hover{transform:perspective(600px) rotateY(180deg)}
+.p-1 p:nth-of-type(3):hover{transform:perspective(600px) rotateY(180deg);box-shadow: 0px 0px 20px 5px rgb(253, 131, 131);}
+.p-1 p:nth-of-type(4):hover{transform:perspective(600px) rotateY(180deg);}
+</style>
+
+
+</body>
+</html>
